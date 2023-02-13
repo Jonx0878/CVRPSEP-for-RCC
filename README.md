@@ -1,6 +1,6 @@
 # CVRPSEP-for-RCC
 Code for finding the lower bound of CVRP instances using Gurobi and the CVRPSEP package.
-OBS: Currently only working for instances of EDGE_WEIGHT_TYPE: EUC_2D not including the Uchoa et al. instances.
+OBS: Currently only working for instances of EDGE_WEIGHT_TYPE: EUC_2D.
 
 To make the code work follow these steps:
 1. Follow the steps provided from Gurobi for configuration of a Microsoft Visual Studio Project: https://support.gurobi.com/hc/en-us/articles/360013194392-How-do-I-configure-a-new-Gurobi-C-project-with-Microsoft-Visual-Studio-
