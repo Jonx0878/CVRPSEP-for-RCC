@@ -135,9 +135,14 @@ struct instance_information load_CVRP_instance(const char* filename) {
     };
 
     for (int i = 0; i < num_cities; i++) {
+        const char* delim;
+        if (startswith("X", filename)) {
+            delim = "\t ";
+        }
+        else delim = " ";
         fgets(line, MAX_LENGTH, fp);
         char* next_token = NULL;
-        char* token = strtok_s(line, " ", &next_token);
+        char* token = strtok_s(line, delim, &next_token);
         demand[i] = atof(next_token);
     }
 
