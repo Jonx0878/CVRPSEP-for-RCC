@@ -24,7 +24,6 @@ gurobi base_model(const int num_cities, int* distances) {
 
 	/* Create environment */
 	GRBemptyenv(&env);
-	GRBsetstrparam(env, " LogFile ", " mip1 .log");
 	GRBsetintparam(env, "OutPutFlag", 0);
 	GRBstartenv(env);
 
